@@ -1,24 +1,18 @@
 import axios from 'axios';
 
-const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://api.botleague.com',
-  headers: {
-    'Content-Type': 'application/json',
-  },
+// Hardcoded API URL (no env variables)
+const API_URL = 'https://api.botleague.com';
+
+export const api = axios.create({
+  baseURL: API_URL,
+  headers: { 'Content-Type': 'application/json' },
 });
 
-// Request interceptor to attach Authorization token
-axiosInstance.interceptors.request.use(
-  (config) => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
-    }
-    return config;
-  },
-  (error) => {
-    return Promise.reject(error);
+// Attach JWT token to every request automatically
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
   }
-);
-
-export default axiosInstance;
+  return config;
+});
