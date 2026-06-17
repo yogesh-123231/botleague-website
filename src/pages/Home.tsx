@@ -21,6 +21,7 @@ export const Home: React.FC = () => {
       <WhyRegister />
       <JoinEcosystem />
       <Sponsors />
+      <div className="border-t border-white max-w-6xl mx-auto px-4 md:px-8 lg:px-12" />
     </div>
   );
 };

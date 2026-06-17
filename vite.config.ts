@@ -100,6 +100,33 @@ assetsToCopy.forEach(({ src, dest }) => {
   }
 });
 
+// Helper to recursively copy directories
+function copyDirSync(srcDir: string, destDir: string) {
+  if (!fs.existsSync(srcDir)) return;
+  if (!fs.existsSync(destDir)) {
+    fs.mkdirSync(destDir, { recursive: true });
+  }
+  const entries = fs.readdirSync(srcDir, { withFileTypes: true });
+  for (const entry of entries) {
+    const srcPath = path.join(srcDir, entry.name);
+    const destPath = path.join(destDir, entry.name);
+    if (entry.isDirectory()) {
+      copyDirSync(srcPath, destPath);
+    } else {
+      // Skip text files
+      if (entry.name.endsWith('.txt')) continue;
+      fs.copyFileSync(srcPath, destPath);
+      console.log(`>>> Automatically copied ${srcPath} to ${destPath}`);
+    }
+  }
+}
+
+try {
+  copyDirSync('./src/assets', './public/assets');
+} catch (err) {
+  console.error('Failed to copy src/assets to public/assets:', err);
+}
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],

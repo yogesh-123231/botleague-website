@@ -148,12 +148,12 @@ export const MOCK_ECOSYSTEM: EcosystemCard[] = [
 ];
 
 export const MOCK_SPONSORS = [
-  { id: 1, name: 'NIT DELHI', logo: '/src/assets/sponsors/nit-delhi.png' },
-  { id: 2, name: 'ROBO COMPANY', logo: '/src/assets/sponsors/robo-company.png' },
-  { id: 3, name: 'INDIAN BIT', logo: '/src/assets/sponsors/indian-bit.png' },
-  { id: 4, name: 'NIT SILCHAR', logo: '/src/assets/sponsors/nit-silchar.png' },
-  { id: 5, name: 'IIT BOMBAY', logo: '/src/assets/sponsors/iit-bombay.png' },
-  { id: 6, name: 'General Robotics', logo: '/src/assets/sponsors/general-robotics.png' }
+  { id: 1, name: 'NIT DELHI', logo: '/assets/sponsors/nit-delhi.png' },
+  { id: 2, name: 'ROBO COMPANY', logo: '/assets/sponsors/robo-company.png' },
+  { id: 3, name: 'INDIAN BIT', logo: '/assets/sponsors/indian-bit.png' },
+  { id: 4, name: 'NIT SILCHAR', logo: '/assets/sponsors/nit-silchar.png' },
+  { id: 5, name: 'IIT BOMBAY', logo: '/assets/sponsors/iit-bombay.png' },
+  { id: 6, name: 'General Robotics', logo: '/assets/sponsors/general-robotics.png' }
 ];
 
 export const QUICK_LINKS = [

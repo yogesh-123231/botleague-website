@@ -45,49 +45,51 @@ export const Hero: React.FC = () => {
       )}
 
       {/* Content Block */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full py-16 md:py-24 flex flex-col justify-center">
-        <div className="max-w-2xl space-y-6 md:space-y-8">
-          
-          {/* Main Title Heading */}
-          <div className="space-y-1">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tighter text-white leading-[1.05] font-sans">
-              INDIA'S ULTIMATE
-              <br />
-              <span className="text-white">ROBOTICS ARENA</span>
-            </h1>
-          </div>
+      {/* Content Block */}
+{/* Content Block */}
+<div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full py-16 md:py-24 flex flex-col justify-center">
+  <div className="max-w-5xl space-y-6 md:space-y-8">
+    
+    {/* Main Title Heading */}
+    <div>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase tracking-wider text-white leading-[1.3] font-display">
+        INDIA'S ULTIMATE
+        <br />
+        ROBOTICS ARENA
+      </h1>
+    </div>
 
-          {/* Subtitle / Description */}
-          <p className="text-lg md:text-xl font-semibold leading-relaxed max-w-lg tracking-wide ">
-            Build.Compete.Rank.The National
-            <br />
-            Ecosystem for Robotics Arena
-          </p>
+    {/* Subtitle / Description */}
+    <p className="text-base md:text-lg lg:text-xl font-medium leading-relaxed max-w-xl tracking-wide font-body text-gray-200">
+      Build.Compete.Rank.The National
+      <br />
+      Ecosystem for Robotics Arena
+    </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-2">
-            <Link to="/register" className="w-full sm:w-auto">
-              <Button 
-                variant="primary" 
-                size="lg" 
-                className="w-full justify-center bg-gradient-to-r from-red-600 to-brand-orange text-white font-extrabold hover:from-red-500 hover:to-orange-500 tracking-wider shadow-lg shadow-brand-orange/15"
-              >
-                CREATE ACCOUNT
-              </Button>
-            </Link>
-            <a href="#competitions" className="w-full sm:w-auto">
-              <Button 
-                variant="secondary" 
-                size="lg" 
-                className="w-full justify-center bg-transparent border border-white/20 hover:border-white/40 text-white font-extrabold tracking-wider"
-              >
-                EXPLORE EVENTS
-              </Button>
-            </a>
-          </div>
+    {/* CTAs */}
+    <div className="flex flex-col sm:flex-row gap-4 pt-2">
+      <Link to="/register" className="w-full sm:w-auto">
+        <Button 
+          variant="primary" 
+          size="lg" 
+          className="w-full justify-center bg-[#FF4C4C] hover:bg-red-600 text-white font-bold tracking-wider shadow-lg shadow-[#FF4C4C]/25 font-body px-8 py-3"
+        >
+          CREATE ACCOUNT
+        </Button>
+      </Link>
+      <a href="#competitions" className="w-full sm:w-auto">
+        <Button 
+          variant="secondary" 
+          size="lg" 
+          className="w-full justify-center bg-transparent border border-white/20 hover:border-white/40 text-white font-bold tracking-wider font-body px-8 py-3"
+        >
+          EXPLORE EVENTS
+        </Button>
+      </a>
+    </div>
 
-        </div>
-      </div>
+  </div>
+</div>
     </section>
   );
 };

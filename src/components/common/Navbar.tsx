@@ -40,7 +40,7 @@ export const Navbar: React.FC = () => {
           
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <img src="/src/assets/logo.png" alt="BOTLEAGUE" className="h-8 md:h-10 w-auto" />
+            <img src="/assets/logo.png" alt="BOTLEAGUE" className="h-8 md:h-10 w-auto" />
           </Link>
 
           {/* Desktop Nav Links */}

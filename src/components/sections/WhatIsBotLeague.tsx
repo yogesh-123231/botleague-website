@@ -61,7 +61,7 @@ export const WhatIsBotLeague: React.FC = () => {
 
           {/* Right Column: Schematic Graphic Image */}
           <div className="flex items-center justify-center p-4">
-            <img src="/src/assets/schematic.png" alt="What is BotLeague Schematic" className="w-full max-w-[320px] h-auto mx-auto lg:ml-auto" />
+            <img src="/assets/schematic.png" alt="What is BotLeague Schematic" className="w-full max-w-[320px] h-auto mx-auto lg:ml-auto" />
           </div>
         </div>
       </div>

@@ -25,7 +25,13 @@ export const Footer: React.FC = () => {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+    {/* 1px Horizontal Line */}
+    <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+      <div className="border-t border-white/10" />
+    </div>
+
+    {/* Footer Content */}
+    <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
         <div className="border-t border-white/10" />
       </div>
       <footer className="bg-brand-dark py-12 md:py-16 font-body">
