@@ -1,5 +1,4 @@
-import React from 'react';
-import { Shield, User, Star, Award, Scale, Briefcase, Users } from 'lucide-react';
+import { Shield, User, Award, Scale, Briefcase, Users } from 'lucide-react';
 import { MOCK_BENEFITS } from '../../utils/mockData';
 
 const MOCK_LEADERBOARD = [
@@ -84,7 +83,6 @@ export default function WhyRegister() {
             {/* Ranks 02 - 08 - Clean List */}
             <div className="space-y-2 max-h-[280px] overflow-y-auto pr-1">
               {MOCK_LEADERBOARD.slice(1).map((item, idx) => {
-                // Determine icon colors for variety
                 const iconColor = idx === 0 ? 'text-blue-400 bg-blue-500/10 border-blue-500/20' : 
                                   idx === 1 ? 'text-cyan-400 bg-cyan-500/10 border-cyan-500/20' : 
                                   'text-pink-400 bg-pink-500/10 border-pink-500/20';

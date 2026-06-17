@@ -58,7 +58,7 @@ export const MOCK_DISCIPLINES: Discipline[] = [
   { id: 6, name: 'Robo War', icon: '⚔️' }
 ];
 
-export const MOCK_BENEFITS = [
+export const MOCK_BENEFITS: Benefit[] = [
   {
     id: 1,
     title: 'LEADERBOARD',
